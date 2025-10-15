@@ -62,11 +62,11 @@ cd Assesment_csharp
 
 - Go to appsettings.json and in the DefaultConnection line, replace the connection string with your database connection.
 
-## Apartado para administrar doctores
+## Imgae to administrate doctors
 ![schedules.png](wwwroot/imgs/doctors.png)
 
-## Apartado para administrar pacientes
+## Image to administrate patients
 ![schedules.png](wwwroot/imgs/pacients.png)
 
-## Apartado para administrar citas
+## Image to administrate appointments
 ![schedules.png](wwwroot/imgs/schedules.png)
