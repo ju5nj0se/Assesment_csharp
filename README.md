@@ -1,64 +1,66 @@
-# 🏥 Hospital San Vicente - Sistema de Gesti ón de Citas Médicas
+# 🏥 **San Vicente Hospital - Medical Appointment Management System**
 
-Nombre: Juan Jose Hernandez Martinez
-Clan: Van Rossum / C# PM
-Correo:  juaan.josehernandez@gmail.com
-T.I 1020430413
+**Name:** Juan Jose Hernandez Martinez  
+**Clan:** Van Rossum / C# PM  
+**Email:** juaan.josehernandez@gmail.com  
+**ID:** 1020430413
 
-## Descripción general del sistema
+## General Description of the System
 
-El sistema **Hospital San Vicente** es una aplicación web desarrollada con **ASP.NET Core MVC** que permite la **gestión de citas médicas** entre doctores y pacientes.  
-Su objetivo principal es facilitar la administración de encuentros médicos (creación, visualización, actualización y eliminación de citas) y optimizar la organización de la información dentro del hospital.
+The San Vicente Hospital system is a web application developed with ASP.NET Core MVC that facilitates the management of medical appointments between doctors and patients.  
+Its main goal is to streamline the administration of medical encounters (creation, viewing, updating, and deletion of appointments) and optimize the organization of information within the hospital.
 
-El sistema permite:
-- Administrar doctores y pacientes (crear, listar, actualizar y eliminar).
-- Programar nuevas citas médicas entre ambos.
-- Validar la disponibilidad horaria para evitar solapamientos de citas.
-- Filtrar citas por **documento de doctor o paciente**.
-- Gestionar estados de las citas: `Pending`, `Attended`, `Canceled`.
+The system allows:
 
-El rol principal que interactúa con el sistema es el **Administrador**, quien tiene control total sobre la gestión de las citas médicas.
+- Managing doctors and patients (create, list, update, and delete).
+- Scheduling new medical appointments between both.
+- Validating availability to avoid appointment overlaps.
+- Filtering appointments by doctor or patient ID.
+- Managing appointment statuses: Pending, Attended, Canceled.
+
+The primary role interacting with the system is the **Administrator**, who has full control over the management of medical appointments.
+
+## Prerequisites
+
+Before running the project, ensure that the following components are installed:
+
+### Required Software:
+
+- .NET SDK 8.0 or higher  
+  👉 Download from [Microsoft](https://dotnet.microsoft.com/download)
+- PostgreSQL 15 or higher  
+  👉 Download from [PostgreSQL.org](https://www.postgresql.org/download/)
+- pgAdmin 4 (optional, for managing the database)
+- Git (for cloning the repository)
+- Visual Studio 2022 or preferred IDE
 
 ---
 
-## Requisitos previos
+## Steps to Clone, Configure, and Run the Application
 
-Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes componentes:
-
-### Software necesario
-- **.NET SDK 8.0 o superior**  
-  👉 [Descargar desde Microsoft](https://dotnet.microsoft.com/download)
-- **PostgreSQL 15 o superior**  
-  👉 [Descargar desde PostgreSQL.org](https://www.postgresql.org/download/)
-- **pgAdmin 4** (opcional, para gestionar la base de datos)
-- **Git** (para clonar el repositorio)
-- **Visual Studio 2022** o IDE de preferencia
-
----
-
-## Pasos para clonar, configurar y ejecutar la aplicación
-Actualizar dependencias:
+Update Dependencies:
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-Instalar EF
+Install EF (Entity Framework):
 ```bash
 dotnet add package Microsoft.EntityFrameworkCore
 ```
 
-Instalar proveedor de PostgreSql, y driver Npgsql
+Install PostgreSQL provider and Npgsql driver:
 ```bash
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 ```
 
-**Clonar el repositorio** Abre una terminal y ejecuta:
+Clone the repository
 
 ```bash
 git clone https://github.com/tu-usuario/Assesment_csharp.git
 cd Assesment_csharp
 ```
-- Copia y pega el script en tu base de datos postgresql
-- Ve a appseetings.json y en la linea DefaultConnection reemplaza tu cadena de conexion a tu base de datos
+- Copy and paste the script into your PostgreSQL database.
+
+- Go to appsettings.json and in the DefaultConnection line, replace the connection string with your database connection.
 
 ## Apartado para administrar doctores
 ![schedules.png](wwwroot/imgs/doctors.png)
