@@ -1,5 +1,10 @@
 # 🏥 Hospital San Vicente - Sistema de Gesti ón de Citas Médicas
 
+Nombre: Juan Jose Hernandez Martinez
+Clan: Van Rossum / C# PM
+Correo:  juaan.josehernandez@gmail.com
+T.I 1020430413
+
 ## Descripción general del sistema
 
 El sistema **Hospital San Vicente** es una aplicación web desarrollada con **ASP.NET Core MVC** que permite la **gestión de citas médicas** entre doctores y pacientes.  
