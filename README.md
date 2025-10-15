@@ -52,6 +52,8 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 git clone https://github.com/tu-usuario/Assesment_csharp.git
 cd Assesment_csharp
 ```
+- Copia y pega el script en tu base de datos postgresql
+- Ve a appseetings.json y en la linea DefaultConnection reemplaza tu cadena de conexion a tu base de datos
 
 ## Apartado para administrar doctores
 ![schedules.png](wwwroot/imgs/doctors.png)
